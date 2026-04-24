@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a7bd8, #8a6ad8);
+}
+
+/* HEADER */
+.header {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#time {
+    font-size: 40px;
+    color: #6a7bd8;
+}
+
+#date {
+    font-size: 14px;
+    color: gray;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* TIMER */
+.timer-card {
+    text-align: center;
+}
+
+#timer {
+    font-size: 48px;
+    color: #6a7bd8;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* INPUT */
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #6a7bd8;
+    color: white;
+    cursor: pointer;
+}
+
+/* TASK */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* TASK DELETE */
+.task-delete {
+    background: #ff6b6b;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* QUICK LINKS GRID */
+#links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/* LINK ITEM */
+.link-item {
+    position: relative;
+    background: #6a7bd8;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* LINK TEXT */
+.link-item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DELETE LINK (X) */
+.link-delete {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.link-delete:hover {
+    color: #ff6b6b;
+}
